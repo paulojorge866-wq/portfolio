@@ -109,3 +109,42 @@ footer {
   font-size: 0.9rem;
   margin-top: 60px;
 }
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  animation: aparecer 1s ease;
+}
+
+header p {
+  animation: aparecer 1s ease 0.3s both;
+}
+
+section {
+  animation: aparecer 1s ease both;
+}
+
+#sobre {
+  animation-delay: 0.5s;
+}
+
+#habilidades {
+  animation-delay: 0.8s;
+}
+
+#projetos {
+  animation-delay: 1.1s;
+}
+
+#contato {
+  animation-delay: 1.4s;
+}
